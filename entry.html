@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Registro de Entrada - BioCheck</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="dashboard.html" class="logo">Bio<span>Check</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Control de Accesos</a></li>
+                    <li><a href="entry.html" class="active">Registrar Entrada</a></li>
+                    <li><a href="exit.html">Registrar Salida</a></li>
+                    <li><a href="history.html">Historial</a></li>
+                    <li><a href="index.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="face-recognition-container">
+            <div class="card">
+                <h1>Registro Biométrico del Personal</h1>
+                <p>Mantente frente a la cámara para registrar tu entrada hacia la planta.</p>
+            </div>
+           
+            <div class="card">
+                <h2><i class="fa-solid fa-camera"></i> Cámara de Identificación Biométrica</h2>
+                
+                <div class="camera-simulation">
+                    <div class="camera-view">
+                        <div class="face-overlay"></div>
+                        
+                        <div class="camera-status">
+						<p>
+						<i class="fa-solid fa-magnifying-glass"></i>
+						Iniciando escaneo facial... Mantenga la posición dentro del marco.
+						</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recognition-controls">
+				<a href="#" class="btn btn-success">
+					<i class="fa-solid fa-play"></i> Iniciar Reconocimiento
+				</a>
+			
+				<a href="#" class="btn btn-secondary">
+					<i class="fa-solid fa-rotate-right"></i> Reiniciar Cámara
+				</a>
+			
+				<a href="dashboard.html" class="btn">
+					<i class="fa-solid fa-arrow-left"></i> Volver al Control de Accesos
+				</a>
+				</div>
+            </div>
+            
+            <div class="card recognition-result">
+                <h2>Resultados de la Identificación</h2>
+                
+                <div class="result-waiting">
+                    <p>
+						<i class="fa-solid fa-spinner fa-spin"></i>
+						Esperando Identificación...
+					</p>
+
+                    <p>Por favor, mira directamente hacia la cámara</p>
+                </div>
+                
+                <!-- Si el resultado es exitoso, entonces: -->
+                <!--
+                <div class="result-success">
+					<p>
+						<i class="fa-solid fa-circle-check"></i>
+						¡Personal Identificado correctamente!
+					</p>
+                    <p>Usuario: Andres Acevedo - Entrada registrada a las 06:25 AM</p>
+                    <a href="dashboard.html" class="btn btn-success">Continuar</a>
+                </div>
+                -->
+                
+                <div class="info-note">
+                    <p><strong>Nota:</strong> Esta es una simulación visual. Con los resultados del sistema, aquí se procesaría el reconocimiento facial.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Métodos Alternativos de Registro</h3>
+                <p>Si la identificación biométrica no funciona, puedes utilizar:</p>
+                
+                <div style="margin-top: 1rem;">
+                    <a href="#" class="btn">
+					<i class="fa-solid fa-key"></i> Código de Acceso
+					</a>
+					
+					<a href="#" class="btn">
+						<i class="fa-solid fa-qrcode"></i> Código QR
+					</a>
+					
+					<a href="#" class="btn">
+						<i class="fa-solid fa-id-card"></i> Tarjeta de Identificación
+					</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">BioCheck v1.0</div>
+            <div class="footer-info">
+                <p>Sistema de control de acceso con identificación facial | Mode: Entry</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

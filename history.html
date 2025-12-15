@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	
+   <title>Historial - BioCheck</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="dashboard.html" class="logo">Bio<span>Check</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Control de Accesos</a></li>
+                    <li><a href="entry.html">Registrar Entrada</a></li>
+                    <li><a href="exit.html">Registrar Salida</a></li>
+                    <li><a href="history.html" class="active">Historial</a></li>
+                    <li><a href="index.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="history-page">
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h1>Historial de Registros del Personal</h1>
+                        <p>Registro de entradas y salidas desde el servidor web del sistema</p>
+                    </div>
+                    <div>
+                        <a href="dashboard.html" class="btn">
+						<i class="fa-solid fa-arrow-left"></i> Volver al Control de Accesos
+					</a>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#" class="btn btn-secondary">
+					<i class="fa-solid fa-calendar-day"></i> Hoy
+					</a>
+					
+					<a href="#" class="btn">
+						<i class="fa-solid fa-calendar-week"></i> Esta Semana
+					</a>
+					
+					<a href="#" class="btn">
+						<i class="fa-solid fa-calendar-days"></i> Este Mes
+					</a>
+					
+					<a href="#" class="btn">
+						<i class="fa-solid fa-user"></i> Filtrar por Usuario
+					</a>
+
+					
+					<a href="#" class="btn">
+						<i class="fa-solid fa-file-export"></i> Exportar Datos
+					</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Registros del Día de Hoy (12 de Diciembre, 2025)</h2>
+                
+                <div class="history-table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Usuario</th>
+                                <th>Hora Entrada</th>
+                                <th>Hora Salida</th>
+                                <th>Duración</th>
+                                <th>Método</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>Andres Acevedo</td>
+                                <td>08:00 AM</td>
+                                <td>05:15 PM</td>
+                                <td>9h 15m</td>
+                                <td>Facial</td>
+                                <td><span class="status-badge status-out">SALIDA</span></td>
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>Miguel De Jesus</td>
+                                <td>08:15 AM</td>
+                                <td>06:30 PM</td>
+                                <td>10h 15m</td>
+                                <td>Facial</td>
+                                <td><span class="status-badge status-out">SALIDA</span></td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>Montserrat Palacios</td>
+                                <td>09:00 AM</td>
+                                <td>--:--</td>
+                                <td>--</td>
+                                <td>Facial</td>
+                                <td><span class="status-badge status-in">EN INSTALACIONES</span></td>
+                            </tr>
+                            <tr>
+                                <td>#004</td>
+                                <td>Laura Alegria</td>
+                                <td>08:30 AM</td>
+                                <td>05:45 PM</td>
+                                <td>9h 15m</td>
+                                <td>Código</td>
+                                <td><span class="status-badge status-out">SALIDA</span></td>
+                            </tr>
+                            <tr>
+                                <td>#005</td>
+                                <td>Enrique Posada</td>
+                                <td>10:00 AM</td>
+                                <td>--:--</td>
+                                <td>--</td>
+                                <td>Facial</td>
+                                <td><span class="status-badge status-in">EN INSTALACIONES</span></td>
+                            </tr>
+                            <tr>
+                                <td>#006</td>
+                                <td>Diana Luna</td>
+                                <td>08:45 AM</td>
+                                <td>05:30 PM</td>
+                                <td>8h 45m</td>
+                                <td>Facial</td>
+                                <td><span class="status-badge status-out">SALIDA</span></td>
+                            </tr>
+                            <tr>
+                                <td>#007</td>
+                                <td>Rigoberto Cardenaz</td>
+                                <td>07:30 AM</td>
+                                <td>04:00 PM</td>
+                                <td>8h 30m</td>
+                                <td>Tarjeta</td>
+                                <td><span class="status-badge status-out">SALIDA</span></td>
+                            </tr>
+                            <tr>
+                                <td>#008</td>
+                                <td>Emilio Flores</td>
+                                <td>09:30 AM</td>
+                                <td>06:00 PM</td>
+                                <td>8h 30m</td>
+                                <td>Facial</td>
+                                <td><span class="status-badge status-out">SALIDA</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
+                    <p><strong>Total de registros:</strong> 8 | <strong>Dentro de la planta:</strong> 2 | <strong>Promedio de la jornada:</strong> 9h 05m</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Estadísticas de Uso</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                    <div>
+                        <h3>Métodos de Registro</h3>
+                        <p>Facial: 6 registros (75%)</p>
+                        <p>Código: 1 registro (12.5%)</p>
+                        <p>Tarjeta: 1 registro (12.5%)</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Horarios</h3>
+                        <p>Entrada más temprana: 07:30 AM</p>
+                        <p>Entrada más tardía: 10:00 AM</p>
+                        <p>Promedio entrada: 08:45 AM</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Duración</h3>
+                        <p>Jornada más corta: 8h 30m</p>
+                        <p>Jornada más larga: 10h 15m</p>
+                        <p>Promedio jornada: 9h 05m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">BioCheck v1.0</div>
+            <div class="footer-info">
+                <p>Sistema de control de acceso con identificación facial  | Mode: History</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

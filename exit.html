@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Registro de Salida - BioCheck</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="dashboard.html" class="logo">Bio<span>Check</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Control de Accesos</a></li>
+                    <li><a href="entry.html">Registrar Entrada</a></li>
+                    <li><a href="exit.html" class="active">Registrar Salida</a></li>
+                    <li><a href="history.html">Historial</a></li>
+                    <li><a href="index.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="face-recognition-container">
+            <div class="card">
+                <h1>Registro de Salida Biométrico </h1>
+                <p>Mantente frente a la cámara para registrar tu salida de la planta.</p>
+            </div>
+            
+            <div class="card">
+                 <h2><i class="fa-solid fa-camera"></i> Cámara de Identificación Biométrica</h2>
+                
+                <div class="camera-simulation">
+                    <div class="camera-view">
+                        <div class="face-overlay"></div>
+                        
+                        <div class="camera-status">
+                            <p>
+							<i class="fa-solid fa-magnifying-glass"></i>
+							Iniciando escaneo facial... Mantenga la posición dentro del marco.
+							</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recognition-controls">
+                    <a href="#" class="btn btn-danger">
+					<i class="fa-solid fa-door-open"></i> Registrar Salida
+					</a>
+
+                    <a href="#" class="btn btn-secondary">
+					<i class="fa-solid fa-rotate-right"></i> Reiniciar Cámara
+					</a>
+				
+					<a href="dashboard.html" class="btn">
+						<i class="fa-solid fa-arrow-left"></i> Volver al Control de Accesos
+					</a>
+                </div>
+            </div>
+            
+            <div class="card recognition-result">
+                <h2>Resultados de la Identificación</h2>
+                
+                <div class="result-waiting">
+                    <p>
+						<i class="fa-solid fa-spinner fa-spin"></i>
+						Esperando Identificación...
+					</p>
+
+                    <p>Por favor, mira directamente hacia la cámara</p>
+                </div>
+                
+                <!-- Si el resultado es exitoso, entonces: -->
+                <!--
+                <div class="result-success">
+                    <p>
+						<i class="fa-solid fa-circle-check"></i>
+						¡Personal Identificado correctamente!
+					</p>
+                    <p>Usuario: Miguel Acevedo - Salida registrada a las 07:30 PM</p>
+                    <p>Jornada laboral: 8 horas 30 minutos</p>
+                    <a href="dashboard.html" class="btn btn-success">Continuar</a>
+                </div>
+                -->
+                
+                <div class="info-note">
+                    <p><strong>Nota:</strong> Esta es una simulación visual. Con los resultados del sistema, aquí se procesaría el reconocimiento facial.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Personal dentro de la Planta</h3>
+                <p>Actualmente hay <strong>7 personas</strong> registradas en el sistema:</p>
+                
+                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                    <li>Andres Acevedo (Entrada: 08:00 AM)</li>
+                    <li>Octavio Sosa (Entrada: 08:15 AM)</li>
+                    <li>Sergio Ramirez (Entrada: 09:00 AM)</li>
+                    <li>Angel Conde (Entrada: 08:30 AM)</li>
+                    <li>Jared Cruz (Entrada: 10:00 AM)</li>
+                    <li>Mauricio Medina (Entrada: 08:45 AM)</li>
+					<li>Enrique Alegria (Entrada: 08:45 AM)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">BioCheck v1.0</div>
+            <div class="footer-info">
+                <p>Sistema de control de acceso con identificación facial | Mode: Exit</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

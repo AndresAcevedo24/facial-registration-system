@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>SmartAccess - BioCheck</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="dashboard.html" class="logo">Bio<span>Check</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Control de Accesos</a></li>
+                    <li><a href="entry.html">Registrar Entrada</a></li>
+                    <li><a href="exit.html">Registrar Salida</a></li>
+                    <li><a href="history.html">Historial</a></li>
+                    <li><a href="index.html">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard container">
+        <div class="welcome-section card">
+            <h1>Control de Accesos – SmartAccess</h1>
+            <p>Bienvenido al sistema de control de acceso con identificación facial. Aquí puedes gestionar las entradas y salidas del personal de la planta.</p>
+        </div>
+        
+        <div class="card">
+            <h2>Actividad del Día</h2>
+            <div class="stats-grid">
+			<div class="stat-card">
+				<div class="stat-icon">
+					<i class="fa-solid fa-users"></i>
+				</div>
+				<div class="stat-value">184</div>
+				<div class="stat-label">Personas Registradas</div>
+			</div>
+		
+			<div class="stat-card">
+				<div class="stat-icon">
+					<i class="fa-solid fa-right-to-bracket"></i>
+				</div>
+				<div class="stat-value">56</div>
+				<div class="stat-label">Entradas Hoy</div>
+			</div>
+		
+			<div class="stat-card">
+				<div class="stat-icon">
+					<i class="fa-solid fa-right-from-bracket"></i>
+				</div>
+				<div class="stat-value">49</div>
+			<div class="stat-label">Salidas Hoy</div>
+			</div>
+
+			<div class="stat-card">
+				<div class="stat-icon">
+					<i class="fa-solid fa-clock"></i>
+				</div>
+				<div class="stat-value">79</div>
+				<div class="stat-label">Dentro de la Planta</div>
+			</div>
+			</div>
+        </div>
+        
+		<div class="card">
+			<h2>Acciones Rápidas</h2>
+			<p>Elige una opción para continuar con la gestión del sistema:</p>
+			
+			<div class="quick-actions">
+				<a href="entry.html" class="btn btn-success">
+					<i class="fa-solid fa-camera"></i>
+					Registrar Entrada
+				</a>
+		
+				<a href="exit.html" class="btn btn-danger">
+					<i class="fa-solid fa-door-open"></i>
+					Registrar Salida
+				</a>
+		
+				<a href="history.html" class="btn btn-secondary">
+					<i class="fa-solid fa-clipboard-list"></i>
+					Ver Historial
+				</a>
+		
+				<a href="#" class="btn">
+					<i class="fa-solid fa-user-gear"></i>
+					Administrar Usuarios
+				</a>
+			</div>
+		</div>
+
+        
+		<div class="card">
+			<h2>Estado del Sistema</h2>
+		
+			<p>
+				<strong><i class="fa-solid fa-video"></i> Cámara:</strong>
+				Conectada y operativa
+			</p>
+		
+			<p>
+				<strong><i class="fa-solid fa-database"></i> Base de datos:</strong>
+				Sincronizada
+			</p>
+		
+			<p>
+				<strong><i class="fa-solid fa-shield-halved"></i> Seguridad:</strong>
+				Nivel alto
+			</p>
+		
+			<p>
+				<strong><i class="fa-solid fa-rotate"></i> Última actualización:</strong>
+				Hoy 14:47 P.M.
+			</p>
+		</div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">SmartAccess v1.0</div>
+            <div class="footer-info">
+                <p>Sistema de control de acceso con identificación facial | Sitio web by Andres Acevedo</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
